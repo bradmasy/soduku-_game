@@ -1,18 +1,39 @@
 class Row
 {
-    constructor()
+    constructor(value, direction,numbers)
     {
-        this.numbers = []
+        this.numbers   = numbers;
+        this.value     = value;
+        this.direction = direction;
+    }
 
+    getNumbers()
+    {
+        return this.numbers;
+    }
+}
+
+class Number
+{
+    constructor(number, quadrant_num, row_num)
+    {
+        this.value    = number;
+        this.Quadrant = quadrant_num;
+        this.row      = row_num;
     }
 }
 
 class Quadrant
 {
-    constructor()
+    constructor(value)
     {
-        this.numbers = [1,2,3,4,5,6,7,8,9]
-        this.ID_list = []
+        this.quadrant_value = value;
+        this.numbers        = [];
+        this.addresses      = [];
 
+    }
+
+    getAddresses(){
+        return this.addresses;
     }
 }
