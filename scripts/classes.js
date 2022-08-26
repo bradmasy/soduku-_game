@@ -1,10 +1,12 @@
 class Row
 {
-    constructor(value, direction,numbers)
+    constructor()
     {
-        this.numbers   = numbers;
-        this.value     = value;
-        this.direction = direction;
+        this.numbers   = []; // holds the addresses
+        this.values    = [];
+        this.rowA      = [];
+        this.rowB      = [];
+        this.quadrant  = [];
     }
 
     getNumbers()
@@ -28,8 +30,9 @@ class Quadrant
     constructor(value)
     {
         this.quadrant_value = value;
-        this.numbers        = [];
+        this.numbers        ;
         this.addresses      = [];
+        this.rows           = [ [], [], []];
 
     }
 
