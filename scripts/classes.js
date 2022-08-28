@@ -27,10 +27,9 @@ class Number
 
 class Quadrant
 {
-    constructor(value)
+    constructor()
     {
-        this.quadrant_value = value;
-        this.numbers        ;
+        this.numbers        = [];
         this.addresses      = [];
         this.rows           = [ [], [], []];
 
